@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    background: rgba(20, 16, 32, 0.10);
+    background: rgba(20, 16, 32, 0.02);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -92,7 +92,6 @@ body {
     cursor: pointer;
 
 }
-
 
 img {
     height: 40px;

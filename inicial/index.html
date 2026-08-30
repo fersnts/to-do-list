@@ -5,18 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:wght@400;600&display=swap"
+        rel="stylesheet">
     <title>TODOLIST</title>
 </head>
 
 <body>
-    <div>
-        <input placeholder="Tarefa">
-        <button>Adicionar</button>
+    <div class="aura">
+        <span></span><span></span><span></span>
+    </div>
+    <div class="container">
+        <input class="input-task" placeholder="Tarefa">
+        <button class="button-add-task">+</button>
 
-        <ul>
+        <ul class="list-task">
 
-            <li>
-                <img src="./img/checked.png" alt="check">
+            <li class="task">
+                <img src="./img/check.png" alt="check">
+                <p>Estudar Git e GitHub</p>
+                <img src="./img/trash.png" alt="trash">
+            </li>
+
+            <li class="task">
+                <img src="./img/check.png" alt="check">
                 <p>Estudar Git e GitHub</p>
                 <img src="./img/trash.png" alt="trash">
             </li>

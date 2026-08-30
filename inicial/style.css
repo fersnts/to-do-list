@@ -1,3 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /*fonte que tirei do google fonts*/
+    outline: none;
+    /*para tirar aquele contorno da caixa de input (opcional)*/
+}
+
+body {
+    background: #0d0a16;
+    /*background-image: url("./img/background.png");*/
+    /*background-repeat: no-repeat;*/
+}
+
+.container {
+    background: rgba(20, 16, 32, 0.10);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #f0eaff;
+    /* texto claro, já que o fundo fica escuro */
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+    /*top left and right bottom*/
+}
+
+.input-task {
+    background: rgba(255, 255, 255, 0.08);
+    color: #f0eaff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    /*para dar espaço entre o input e o placeholder*/
+    font-size: 18px;
+
+}
+
+.button-add-task {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background: #9e7dd3;
+    color: #1a1330;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    /* para o botão ir todo para a direita*/
+    cursor: pointer;
+    /*quando passa o mouse, ele fica em mãozinha*/
+    font-weight: 600;
+}
+
+.button-add-task:hover {
+    /*isso é para mudar a cor do botão quando passa o mouse por cima*/
+    opacity: 0.8;
+}
+
+.button-add-task:active {
+    /*isso é para quando clicar*/
+    opacity: 0.6;
+
+}
+
+.list-task {
+    width: 100%;
+    /*para ocupar a linha inteira*/
+    list-style: none;
+    /*para tirar a bolinha da lista*/
+    margin-top: 30px;
+}
+
+.task {
+    background: rgba(255, 255, 255, 0.07);
+    color: #f0eaff;
+    border-radius: 8px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    /*existem sites que fazem o box shadow*/
+    height: 50px;
+    display: flex;
+    /*para por tudo na mesma linha*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+
 img {
-    height: 25px;
+    height: 40px;
+    opacity: 0;
+    /*assim deixa a imagem invisível enquanto não tiver o hover*/
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img {
+    opacity: 1;
+}
+
+.aura {
+    position: fixed;
+    inset: -20%;
+    z-index: -1;
+    filter: blur(60px);
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+.aura span {
+    position: absolute;
+    width: 55%;
+    height: 55%;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    animation: drift 32s ease-in-out infinite;
+}
+
+.aura span:nth-child(1) {
+    background: radial-gradient(circle, #7c5cff 0%, transparent 70%);
+    top: 5%;
+    left: 0%;
+}
+
+.aura span:nth-child(2) {
+    background: radial-gradient(circle, #ff8fc0 0%, transparent 70%);
+    top: 30%;
+    right: 0%;
+    animation-delay: -11s;
+    animation-duration: 38s;
+}
+
+.aura span:nth-child(3) {
+    background: radial-gradient(circle, #4fd6c9 0%, transparent 70%);
+    bottom: 0%;
+    left: 20%;
+    animation-delay: -22s;
+    animation-duration: 44s;
+}
+
+@keyframes drift {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    33% {
+        transform: translate(8%, -6%) scale(1.12);
+    }
+
+    66% {
+        transform: translate(-6%, 8%) scale(0.95);
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
 }

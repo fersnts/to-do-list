@@ -3,15 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    /*fonte que tirei do google fonts*/
     outline: none;
-    /*para tirar aquele contorno da caixa de input (opcional)*/
 }
 
 body {
     background: #0d0a16;
-    /*background-image: url("./img/background.png");*/
-    /*background-repeat: no-repeat;*/
 }
 
 .container {
@@ -20,12 +16,10 @@ body {
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.12);
     color: #f0eaff;
-    /* texto claro, já que o fundo fica escuro */
     width: 500px;
     border-radius: 10px;
     padding: 20px;
     margin: 100px auto 0;
-    /*top left and right bottom*/
 }
 
 .input-task {
@@ -36,7 +30,6 @@ body {
     width: 400px;
     height: 40px;
     padding-left: 10px;
-    /*para dar espaço entre o input e o placeholder*/
     font-size: 18px;
 
 }
@@ -54,28 +47,22 @@ body {
     font-size: 17px;
     padding: 0 15px;
     float: right;
-    /* para o botão ir todo para a direita*/
     cursor: pointer;
-    /*quando passa o mouse, ele fica em mãozinha*/
     font-weight: 600;
 }
 
 .button-add-task:hover {
-    /*isso é para mudar a cor do botão quando passa o mouse por cima*/
     opacity: 0.8;
 }
 
 .button-add-task:active {
-    /*isso é para quando clicar*/
     opacity: 0.6;
 
 }
 
 .list-task {
     width: 100%;
-    /*para ocupar a linha inteira*/
     list-style: none;
-    /*para tirar a bolinha da lista*/
     margin-top: 30px;
 }
 
@@ -84,10 +71,8 @@ body {
     color: #f0eaff;
     border-radius: 8px;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
-    /*existem sites que fazem o box shadow*/
     height: 50px;
     display: flex;
-    /*para por tudo na mesma linha*/
     align-items: center;
     justify-content: space-between;
     padding: 0 15px;
@@ -100,7 +85,6 @@ body {
 img {
     height: 40px;
     opacity: 0;
-    /*assim deixa a imagem invisível enquanto não tiver o hover*/
     transition: opacity 0.5s ease-in-out;
 }
 

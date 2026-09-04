@@ -9,6 +9,10 @@ let minhaListaDeItens = []
 
 // 3. ADICIONAR O QUE FOI DIGITADO NO ARRAY
 function adicionarNovaTarefa() {
+    if (input.value.trim() === '') {
+        return
+    }
+
     minhaListaDeItens.push({
         tarefa: input.value,
         concluido: false

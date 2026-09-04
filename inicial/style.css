@@ -30,7 +30,7 @@ body {
 
 .input-task {
     background: rgba(255, 255, 255, 0.08);
-    color: #f0eaff;
+    color: #fceaff;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 5px;
     width: 400px;
@@ -39,6 +39,10 @@ body {
     /*para dar espaço entre o input e o placeholder*/
     font-size: 18px;
 
+}
+
+.input-task::placeholder {
+    color: #9e7dd3; 
 }
 
 .button-add-task {
@@ -142,6 +146,12 @@ img {
     left: 20%;
     animation-delay: -22s;
     animation-duration: 44s;
+}
+
+.done {
+    background: rgba(49, 48, 48, 0.5);
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.2);
 }
 
 @keyframes drift {
